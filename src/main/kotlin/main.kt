@@ -1,12 +1,17 @@
 fun main(args: Array<String>) {
-    var person1 = employee("Don King","111000",1)
-    var person2 = employee("Muhammed Ali","222000",2)
-    var person3 = employee("George Foreman","333000",3)
+    // set my parameters to my fields
+    var person1 = employee("Don King","111000", 1)
+    var person2 = employee("Muhammed Ali","222000", 1)
+    var person3 = employee("George Foreman","333000", 3)
 
-    println(person1.name + "\n" + person1.number + "\n" + person1.shift.toString())
-    println("\n")
-    println(person2.name + "\n" + person2.number + "\n" + person2.shift.toString())
-    println("\n")
-    println(person3.name + "\n" + person3.number + "\n" + person3.shift.toString())
-
+    // print my first record for person1 "as is"
+    person1.printAll()
+    // update person1 and reprint with new information for all three fields
+    person1.name="Joe Frazer"
+    person1.number="112000"
+    person1.shift=2
+    person1.printAll()
+    // print person2 and person3 records "as is"
+    person2.printAll()
+    person3.printAll()
 }
